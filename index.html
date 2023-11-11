@@ -9,28 +9,27 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="navbar">
-            <div class="header-main">
+    <nav class="main-container">
+        <div class="header-main">
+            <span class="blur">
                 <h1>N'ol</h1>
-                <div class="topics">
-                    <ul>
-                        <li><a href="#">Quiene somos</a></li>
-                        <li><a href="#">Que hacemos</a></li>
-                        <li><a href="#">Que buscamos</a></li>
-                    </ul>
-                </div>
-            </div>
+            </span>
+            <!-- <ul class="topics">
+                <li><a href="https://es.wikipedia.org/wiki/Wich%C3%ADs" target="_blank">Quienes somos</a></li>
+                <li><a href="#">Que hacemos</a></li>
+                <li><a id="purpouse">Que buscamos</a></li>
+            </ul> -->
         </div>
-        <div class="background-video">
-            <video autoplay muted loop id="videoFondo">
-                <source src="TABOADA_MEDIA/TABOADA_MEDIA/N_ol.mp4" type="video/mp4">
-                <!-- agregar mas formatos de video aquí para compatibilidad -->
-                Tu navegador no soporta el elemento de video.
-            </video>
-        </div>
+    </nav>
+
+    <div class="background-video">
+        <video autoplay muted loop id="videoFondo">
+            <source src="TABOADA_MEDIA/TABOADA_MEDIA/N_ol.mp4" type="video/mp4">
+            <!-- agregar mas formatos de video aca para compatibilidad -->
+            Tu navegador no soporta el elemento de video.
+        </video>
     </div>
-    <div class="historias">
+    <div class="historias" id="intro-text">
         <h2 class="fade-in">Esta es la historia de una cultura ancestral.
             Una comunidad que nos habla implicitamente
             sobre sus valores, como la conexion con el territorio
@@ -38,6 +37,37 @@
             su estilo de vida.
         </h2>
     </div>
+
+    <header class="container">
+        <div class="manifesto-content">
+            <h1>N'ol</h1>
+            <h3>Significa "ser visible"</h3>
+            <br>
+            <h5>Manifiesto</h5>
+            <br>
+            <p> "Lo que no se ve, palpita, respira en la sombra.
+                No se ve la lucha contra olvidos y perjuicios. Las voces que claman
+                espacio y comprension."
+            </p>
+            <p>Son las comunidades indigenas, y sus manos que labran
+                la historia en silencio. Son las culturas tejidas en hilos.
+                En lo invisible, encierran un legado de sabiduria y
+                espiritualidad.
+            </p>
+            <p>
+                Para hacer visible lo invisible, nos damos la mano para
+                reconocer la riqueza de estas comunidadades. Con una
+                vision compartida y una escucha sincera, formamos un
+                mundo de inclusion y dignidad.
+            </p>
+            <p>En lo que no se ve, encontramos las raices profundas de
+                una humanidad comun. N'ol es una fusion de saberes.
+                N'ol es conciencia y respeto. N'ol es ser visible." </p>
+        </div>
+        <div class="image">
+            <img src="TABOADA_MEDIA/manifest.png" id="manifesto-img">
+        </div>
+    </header>
     <script src="index.js"></script>
 </body>
 
