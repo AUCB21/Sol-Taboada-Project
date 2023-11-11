@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:wght@300;400&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(231, 231, 231);
+    font-size: 2rem;
+}
+
+.main-container {
+    margin-bottom: 100vh;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 15px;
+    margin: 10px; /* Puedes ajustar el padding según tus necesidades */
+    z-index: 1; /* Ajusta según sea necesario para que esté sobre otros elementos */
+}
+
+.header-main h1{
+    color: #6f6f6f;
+}
+
+.background-video #videoFondo{
+    height: 75vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    margin-top: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 50%;
+}
+
+.historias {
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajustar según sea necesario */
+}
+
+.historias h2 {
+    margin: 4.5em 0;
+    color: #B86F57;
+    font-size: 0.75em;
+    text-align: center;
+}
