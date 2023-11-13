@@ -1,8 +1,8 @@
 const elements = [
   ".historias h2",
-  ".container-quienes-somos h2",
-  ".hache1 .text p",
-  ".hache1 .text span",
+  // ".container-quienes-somos h2",
+  // ".hache1 .text p",
+  // ".hache1 .text span",
 ];
 
 elements.forEach((element) => {
@@ -38,3 +38,14 @@ const scrollToSection = (sectionId) => {
     });
   }
 };
+
+// window.addEventListener("scroll", function () {
+//   const scrollPosition = window.scrollY || window.pageYOffset;
+
+//   document.querySelectorAll(".tareas-list li").forEach((element) => {
+//     const offset = element.offsetTop;
+//     const distance = Math.abs(scrollPosition - offset);
+
+//     element.style.marginTop = `${Math.min(distance, 150)}px`; // Puedes ajustar el valor máximo (150 en este caso)
+//   });
+// });
