@@ -1,21 +1,30 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const textElement = document.querySelector(".historias h2");
+const elements = [
+  ".historias h2",
+  ".container-quienes-somos h2",
+  ".hache1 .text p",
+  ".hache1 .text span",
+];
 
-  window.addEventListener("scroll", function () {
-    const rect = textElement.getBoundingClientRect();
-    let windowHeight =
-      window.innerHeight || document.documentElement.clientHeight;
-    let distanceToCenter = Math.abs(
-      rect.top + rect.height / 2 - windowHeight / 2
-    );
+elements.forEach((element) => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const textElement = document.querySelector(element);
 
-    // Definir una distancia máxima, puedes ajustar este valor según sea necesario
-    let maxDistance = windowHeight / 1.2;
+    window.addEventListener("scroll", function () {
+      const rect = textElement.getBoundingClientRect();
+      let windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      let distanceToCenter = Math.abs(
+        rect.top + rect.height / 2 - windowHeight / 2
+      );
 
-    // Calcular la opacidad en función de la distancia al centro
-    let opacity = 1 - Math.min(distanceToCenter / maxDistance, 1);
+      // Definir una distancia máxima, ajustar este valor según sea necesario
+      let maxDistance = windowHeight / 1.2;
 
-    textElement.style.opacity = opacity;
+      // Calcular la opacidad en función de la distancia al centro
+      let opacity = 1 - Math.min(distanceToCenter / maxDistance, 1);
+
+      textElement.style.opacity = opacity;
+    });
   });
 });
 
@@ -29,9 +38,3 @@ const scrollToSection = (sectionId) => {
     });
   }
 };
-
-const queBuscamos = document.getElementById("purpouse");
-
-queBuscamos.addEventListener("click", () => {
-  scrollToSection("intro-text");
-});

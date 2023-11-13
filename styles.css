@@ -10,6 +10,26 @@
     box-sizing: border-box;
 }
 
+/* Ancho y color del riel de la scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Estilo del "pulgarcito" de la scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+/* Cambio en el color del "pulgarcito" al pasar el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
 nav{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +41,7 @@ nav{
 .header-main {
     display: flex;
     justify-content: center;
-    align-items: center; /* Alinea verticalmente el contenido */
+    align-items: center; 
     height: 4rem;
     padding: 15px;
     margin: 10px;
@@ -57,14 +77,14 @@ nav{
     font-family: 'Aclonica', sans-serif;
     font-size: 2.5rem;
     color: #f9f9f9;
-    background-color: rgba(201, 158, 158, 0.25);
+    /* background-color: rgba(201, 158, 158, 0.25); */
     margin: 0;
     flex: 0; 
 }
 
-.header-main .blur{
+/* .header-main .blur{
     box-shadow: 0 0 500px 50px rgba(201, 158, 158, 0.5);
-}
+} */
 
 .background-video {
     display: flex;
@@ -93,7 +113,7 @@ nav{
     font-size: 0.75em;
     text-align: center;
     opacity: 0; /* Texto inicialmente transparente */
-    transition: opacity 0.5s ease; /* Transición de la propiedad de opacidad durante 1 segundo */
+    transition: opacity 0.5s ease;
 }
 
 .manifesto-content{
@@ -149,4 +169,43 @@ header{
     float: right;
     max-width: 40vw;
     max-height: 95vh;
+}
+
+.quienes-somos{
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.quienes-somos .hache1{
+    width: 100vw;
+    margin: 3em auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-somos h2{
+    color: #B86F57;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.quienes-somos span{
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.quienes-somos p{
+    font-size: 0.7rem;
+    text-align: center; 
+}
+
+.quienes-somos .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 25vw;
 }
