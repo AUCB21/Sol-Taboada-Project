@@ -39,13 +39,26 @@ const scrollToSection = (sectionId) => {
   }
 };
 
-// window.addEventListener("scroll", function () {
-//   const scrollPosition = window.scrollY || window.pageYOffset;
+// animation.js
 
-//   document.querySelectorAll(".tareas-list li").forEach((element) => {
-//     const offset = element.offsetTop;
-//     const distance = Math.abs(scrollPosition - offset);
+document.addEventListener("scroll", function () {
+  const scrollPosition = window.scrollY;
 
-//     element.style.marginTop = `${Math.min(distance, 150)}px`; // Puedes ajustar el valor máximo (150 en este caso)
-//   });
-// });
+  document.querySelectorAll(".tareas-list li").forEach((element) => {
+    const offset = element.offsetTop;
+    const distance = Math.abs(scrollPosition - offset);
+    const maxDistance = 150; // Ajusta según prefieras
+
+    // Calcula el porcentaje de desplazamiento
+    const percentage = Math.min(distance / maxDistance, 1);
+
+    // Calcula el ángulo en función del desplazamiento
+    const angle = percentage * Math.PI; // Convierte el porcentaje a un ángulo en radianes
+
+    // Calcula el valor del border-radius usando funciones trigonométricas
+    const borderRadius = 50 + 50 * Math.sin(angle); // Ajusta según prefieras
+
+    // Aplica el nuevo valor al border-radius
+    element.style.borderRadius = `${borderRadius}%`;
+  });
+});

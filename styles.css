@@ -30,22 +30,22 @@
     background-color: #555;
 }
 
-nav{
+/* nav{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.main-container {
+/* .main-container {
     margin-bottom: 120px;
-}
+} */
 
 .header-main {
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 4rem;
-    padding: 15px;
-    margin: 10px;
-    z-index: 1;
+    /* padding: 15px; */
+    /* margin: 10px; */
+    z-index: 10000;
 }
 
 /* .topics {
@@ -76,7 +76,8 @@ nav{
     align-items: center;
     font-family: 'Aclonica', sans-serif;
     font-size: 2.5rem;
-    color: #f9f9f9;
+    color: #f6f6f6;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /* background-color: rgba(201, 158, 158, 0.25); */
     margin: 0;
     flex: 0; 
@@ -91,11 +92,13 @@ nav{
     align-items: center;
     justify-content: center;
     height: 85vh;
+    opacity: 50%;
 }
 
 .background-video #videoFondo {
     width: 100%;
-    opacity: 50%;
+    /* opacity: 50%; */
+    z-index: 0;
 }
 
 .historias {
@@ -126,9 +129,10 @@ nav{
 }
 
 .manifesto-content h1{
+    font-family: 'Aclonica', sans-serif;
     font-size: 2rem;
     color: #B86F57;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
@@ -136,7 +140,7 @@ nav{
 .manifesto-content h3{
     font-size: 1rem;
     color: #B86F57;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
@@ -153,7 +157,7 @@ nav{
     font-size: 0.6rem;
 }
 
-header{
+#header{
     height: auto;
     position: relative;
     padding-top: 2rem;
@@ -171,9 +175,13 @@ header{
     max-height: 95vh;
 }
 
+.tareas{
+    padding-bottom: 15%;
+}
+
 .quienes-somos{
     /* width: 100%; */
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -211,7 +219,7 @@ header{
 }
 
 .tareas-list {
-    padding: 0 2em;
+    padding: 1em 2em;
     display: flex;
     gap: 2rem;
     justify-content: space-around;
@@ -220,6 +228,7 @@ header{
 }
 
 .tareas-list ul{
+    padding-top: 2rem;
     width: 100%;
     justify-content: center;
 }
@@ -227,15 +236,15 @@ header{
 .tareas-list li {
     flex: 1;
     width: 22vw;
-    height: 22vw; /* Asegura que la altura sea igual al ancho */
-    border: 2px solid #333;
+    height: 25vw; /* Asegura que la altura sea igual al ancho */
+    border: 2px solid #c1ba9d;
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box; /* Añadido para que el border-box se aplique correctamente */
 }
 
 .mision, .vision, .valores {
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,13 +255,88 @@ header{
 
 
 .tareas-list li h1 {
+    color: #B86F57;
     font-size: 1.2rem;
-    margin-bottom: 10px; /* Ajusta según prefieras */
+    margin-bottom: 1em; 
 }
 
 .tareas-list li p {
     width: 60%;
-    font-size: 0.45rem;
+    font-size: 0.55rem;
     text-align: center; /* Alinea el texto en el centro */
     margin: 0;
+}
+
+.chaguar-content{
+    position: relative;
+    justify-content: left;
+    width: 40vw;
+    overflow: hidden;
+    padding: 0 2rem;
+    height: 100vh;
+}
+
+.chaguar-content h1{
+    font-size: 2rem;
+    color: #B86F57;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.chaguar-content h3{
+    font-size: 1rem;
+    color: #B86F57;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.chaguar-content h5{
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.chaguar-content p{
+    padding: 0.2rem 0;
+    font-style: italic;
+    font-size: 0.6rem;
+}
+
+.madera-content{
+    position: relative;
+    justify-content: left;
+    width: 40vw;
+    overflow: hidden;
+    padding: 0 2rem;
+    height: 100vh;
+}
+
+.madera-content h1{
+    font-size: 2rem;
+    color: #B86F57;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.madera-content h3{
+    font-size: 1rem;
+    color: #B86F57;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.madera-content h5{
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.madera-content p{
+    padding: 0.2rem 0;
+    font-style: italic;
+    font-size: 0.6rem;
 }
