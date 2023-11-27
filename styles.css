@@ -382,6 +382,6 @@ table {
 /* Additional styling for text overlay */
 .cell:before {
     padding: 10px; /* Adjust padding for better visibility */
-    font-size: 14px; /* Adjust font size */
+    font-size: 1rem; /* Adjust font size */
     font-weight: bold; /* Adjust font weight */
 }
