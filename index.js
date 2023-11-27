@@ -18,7 +18,7 @@ elements.forEach((element) => {
       );
 
       // Definir una distancia máxima, ajustar este valor según sea necesario
-      let maxDistance = windowHeight / 1.2;
+      let maxDistance = windowHeight
 
       // Calcular la opacidad en función de la distancia al centro
       let opacity = 1 - Math.min(distanceToCenter / maxDistance, 1);
