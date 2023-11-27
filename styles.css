@@ -102,6 +102,7 @@ body, html {
 }
 
 .manifesto-content{
+    height: 100vh;
     position: relative;
     justify-content: left;
     width: 40vw;
@@ -140,13 +141,13 @@ body, html {
 }
 
 #header{
-    height: 90dvh;
+    height: 90vh;
     position: relative;
     padding: 5rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .image #manifesto-img{
@@ -320,4 +321,67 @@ body, html {
     padding: 0.2rem 0;
     font-style: italic;
     font-size: 0.6rem;
+}
+
+.cat-container{
+    height: 90vh;
+    position: relative;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.valores-grid {
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 80vh;
+}
+
+table {
+    width: 100%;
+    max-width: 85%; /* Adjust the maximum width as needed */
+    border-collapse: separate;
+    border-spacing: 1.5em;
+}
+
+.cell {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure each cell takes up the full width */
+}
+
+.cell img {
+    width: 660px;
+    height: 200px;
+    object-fit: cover;
+    display: block; /* Ensure images don't have extra space underneath */
+}
+
+.cell:before {
+    content: attr(data-text); /* Use the alt text as content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    opacity: 1; /* Set opacity to 1 by default */
+    pointer-events: none; /* Ensure the text doesn't interfere with interactions */
+    z-index: 1; /* Place the text overlay on top of the image */
+}
+
+.cell:nth-child(2n):before {
+    background: rgba(0, 0, 0, 0.5); /* Adjust the background color for even rows */
+}
+
+/* Additional styling for text overlay */
+.cell:before {
+    padding: 10px; /* Adjust padding for better visibility */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
 }
