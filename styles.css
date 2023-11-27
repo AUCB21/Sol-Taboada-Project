@@ -53,7 +53,7 @@ body, html {
 }
 
 .header-main h1 {
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'Aclonica', sans-serif ;
     font-size: 2.5rem;
     color: #f6f6f6;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -151,10 +151,11 @@ body, html {
 }
 
 .image #manifesto-img{
+    border-radius: 5px;
     size-adjust: cover;
     object-fit: cover;
     float: right;
-    max-height: 85%;
+    max-height: 75%;
 }
 
 .tareas{
@@ -324,6 +325,7 @@ body, html {
 }
 
 .cat-container{
+    margin-top: 25%;
     height: 90vh;
     position: relative;
     padding: 5rem 0;
@@ -356,8 +358,9 @@ table {
 }
 
 .cell img {
-    width: 660px;
-    height: 200px;
+    border-radius: 5px;
+    width: 35dvw;
+    height: 25dvh;
     object-fit: cover;
     display: block; /* Ensure images don't have extra space underneath */
 }
@@ -381,7 +384,138 @@ table {
 
 /* Additional styling for text overlay */
 .cell:before {
-    padding: 10px; /* Adjust padding for better visibility */
-    font-size: 1rem; /* Adjust font size */
-    font-weight: bold; /* Adjust font weight */
+    padding: 10px; 
+    font-size: 1rem; 
+    font-weight: bold; 
 }
+
+.taller-grid{
+    display: grid;
+    grid-template-areas: 
+        "side content content"
+        "foot foot foot";
+}
+
+article{grid-area: side;}
+aside{grid-area: content;}
+footer{grid-area: foot;}
+
+.taller-grid article{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    box-sizing: border-box;
+    height: 80dvh;
+}
+
+.taller-grid h1{
+    color: #B86F57;
+    font-size: 1.5rem;
+}
+
+.taller-grid h3{
+    font-size: 1rem;
+}
+
+.taller-grid h5{
+    font-size: 0.75rem;
+}
+
+.taller-grid p{
+    font-size: 0.5rem;
+}
+
+.taller-grid b{
+    font-size: inherit;
+}
+
+.taller-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 60dvh;
+}
+
+.taller-aside h1{
+    color: #B86F57;
+    font-size: 1.2rem;
+}
+
+.taller-aside h3{
+    font-size: 1rem;
+}
+
+.taller-aside h5{
+    font-size: 0.75rem;
+}
+
+.taller-aside p{
+    font-size: 0.5rem;
+
+}
+
+.taller-aside div{
+    width: 70vw;
+    padding: 0.33rem 2rem;
+}
+
+.taller-aside div span{
+    border-bottom: solid #B86F57 1px; 
+    width: 95%; 
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+.column-text{
+    float: left;
+    width: 30vw;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Style the images */
+.column img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+  
+  /* Style the description */
+.description {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.column-text h1{
+    padding: 0.5em 1em;
+    color: #B86F57;
+    font-size: 1.2rem;
+}
+
+.column-text h3{
+    padding: 0 1.5em;
+    font-size: 0.85rem;
+}
+
+  #silla-ikana{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: right;
+    max-height: 75%;
+    margin-top: 25%;
+  }
